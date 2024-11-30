@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page with Shrinkable Popup</title>
+    <link rel="stylesheet" href="Css/gifts.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Intro Section -->
+    <div id="intro" class="intro">
+        <h1>Welcome to My Website</h1>
+        <p>Experience something special...</p>
+    </div>
+
+    <!-- Popup Section -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Welcome Back!</h2>
+            <p>This is a quick message or announcement.</p>
+            <button id="close-btn" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Corner Logo -->
+    <div id="corner-logo" class="corner-logo hidden">
+        <img src="logo.png" alt="Logo" id="logo" />
+    </div>
+</body>
+</html>

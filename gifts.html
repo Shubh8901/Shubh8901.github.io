@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug with countdown</title>
+    <link rel="stylesheet" href="Css/gifts.css">
+</head>
+<body>
+    <!-- Intro Section -->
+    <div id="intro" class="intro">
+        <h1>Welcome, My Love</h1>
+        <p> Collection of things I was able to make or collect for you. </p>
+    </div>
+
+    <!-- Popup Section -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <iframe src="Flowers/flower.html" class="iframe-content" frameborder="0"></iframe>
+            <button id="close-btn" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Corner Logo -->
+    <div id="corner-logo" class="corner-logo hidden">
+        <img src="white_flower.png" alt="Logo" id="logo" />
+    </div>
+    <div id="sweetHugArea" class="hug-wrapper">
+        <img src="hug.gif" alt="Virtual Hug" class="hug-animation">
+        <h2 class="hug-message">A virtual hug until the day we meet 🤗</h2>
+    </div>
+
+   <!-- Countdown Timer -->
+    <div class="countdown-container">
+    <h1>Counting down to our special day! ❤️</h1>
+    <div id="countdown">
+      <div class="time">
+        <span id="days">00</span>
+        <small>Days</small>
+      </div>
+      <div class="time">
+        <span id="hours">00</span>
+        <small>Hours</small>
+      </div>
+      <div class="time">
+        <span id="minutes">00</span>
+        <small>Minutes</small>
+      </div>
+      <div class="time">
+        <span id="seconds">00</span>
+        <small>Seconds</small>
+      </div>
+    </div>
+    <p id="message" class="hidden">Just a few days more, my love! 🥰</p>
+  </div>
+    <script src="js/gifts.js" defer></script>
+</body>
+</html>
