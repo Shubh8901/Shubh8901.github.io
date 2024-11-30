@@ -1,0 +1,199 @@
+/* Intro Section */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: #fff;
+}
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.9s ease-in-out;
+    z-index: 1000;
+}
+
+/* Popup Section */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.8s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Popup Content */
+.popup-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #8e24aa;
+}
+
+/* Corner Logo */
+.corner-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.corner-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Transitioned Intro to Corner */
+.shrunk {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    left: auto;
+    transform: none;
+    background-color: transparent;
+}
+/* Hug Wrapper */
+.hug-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hug-animation {
+    max-width: 60%;
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hug-message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.countdown-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.time {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80px;
+}
+
+.time span {
+  font-size: 2rem;
+  display: block;
+}
+
+.time small {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeOutHug {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeInCountdown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

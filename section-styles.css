@@ -1,0 +1,106 @@
+body {
+    background-color: #4B0082; /* Dark violet */
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1, p {
+    opacity: 0; /* Initial state for animation */
+    animation: textFadeIn 2s ease-in-out forwards;
+}
+
+h1 {
+    animation-delay: 0.5s; /* Delay for heading */
+}
+
+p {
+    animation-delay: 1s; /* Delay for paragraph */
+}
+
+/* Keyframe animation for text fade-in */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide-up effect */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.2em;
+}
+
+/* Subtle animations */
+.animated-heart {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 85% 100%, 50% 75%, 15% 100%, 0% 35%);
+    animation: heartbeat 1.5s infinite;
+}
+
+.animated-stars {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: radial-gradient(closest-side, #FFFFFF, transparent);
+    animation: twinkle 2s infinite alternate;
+}
+
+.animated-ribbon {
+    width: 80px;
+    height: 20px;
+    margin: 20px auto;
+    background-color: gold;
+    border-radius: 10px;
+    animation: wave 2s infinite;
+}
+
+/* Keyframe animations */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes twinkle {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+}
