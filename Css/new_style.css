@@ -1,0 +1,106 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('op.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.23); /* Adjust transparency here */
+    z-index: -1;
+}
+
+/* Container for Centered Content */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #f8c0d8;
+    margin-bottom: 20px;
+}
+
+/* Button Group Layout */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Button Base Styling */
+.btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d6a1a7;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Double Swipe Effect Pseudo-elements */
+.btn:before, .btn:after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 500%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: transform 1.25s ease-in-out;
+}
+
+.btn:before {
+    top: -100%;
+    left: 0;
+    transform: translateX(-100%) rotate(45deg);
+    background: rgba(250, 225, 218, 0.3);
+}
+
+.btn:after {
+    bottom: -100%;
+    right: 0;
+    transform: translateX(100%) rotate(45deg);
+    background: rgba(250, 225, 218, 0.3)
+}
+/* Button Hover Effects */
+.btn:hover:before {
+    transform: translateX(0) rotate(45deg);
+}
+
+.btn:hover:after {
+    transform: translateX(0) rotate(45deg);
+}
+
+/* Inner Button Text */
+.btn span {
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover span {
+    opacity: 0.9;
+    color: #fff;
+}
