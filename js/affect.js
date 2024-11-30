@@ -2,7 +2,7 @@
 const sections = [
   {
     statement: "How I felt when I first realized I started falling for you 💕",
-    youtubeLink: "https://youtu.be/pHu4PLhuKgQ?t=18"
+    youtubeLink: "https://youtu.be/pHu4PLhuKgQ?t=37"
   },
   {
     statement: "How I feel about us 🥰",
